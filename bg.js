@@ -1,8 +1,17 @@
-console.log("dzialah");
 
+
+
+function generate(){
+//Removing previous content and styling
+var arr = document.getElementsByClassName("isq");
+
+for(var i=0; i<arr.length; i++){
+	arr[i].innerHTML = null;
+	arr[i].style.backgroundImage = "none";
+}
+    
 //Rolling number of terrain elements for each main square
-
-var dice1, dice2;
+	var dice1, dice2;
 
 for(var i=1; i<7; i++){
 	dice1 = Math.floor((Math.random()*6)+1);
@@ -33,7 +42,7 @@ for(var i=1; i<7; i++){
 			numOfTerrain = Math.floor((Math.random()*4));
 			break;
 	}
-	console.log("Liczba terenow: " +numOfTerrain);
+	// console.log("Liczba terenow: " +numOfTerrain);
 
 	//Randomizing the placement of terrains in squares
 	var rolls = [];
@@ -50,7 +59,7 @@ for(var i=1; i<7; i++){
 			dice1 = Math.floor((Math.random()*6)+1);
 			dice2 = Math.floor((Math.random()*6)+1);
 			diceroll = dice1+dice2;
-			console.log("Rzut kostka na teren: " +diceroll);
+			// console.log("Rzut kostka na teren: " +diceroll);
 			switch(diceroll){
 				case 2:
 				case 3:
@@ -98,13 +107,13 @@ for(var i=1; i<7; i++){
 					document.querySelector('.o'+(i)+' '+'.i'+(rolls[j])).textContent = "Sin";
 					break;
 			}
-
-			//console.log('.o'+(i)+' '+'.i'+(rolls));
-			//document.querySelector('.o'+(i)+' '+'.i'+(rolls[j])).textContent = "teren";
 		}
 	}
 
 }
+};
+
+
 
 
 var legend_button = document.querySelector('.dis_legend');
@@ -122,7 +131,11 @@ legend_button.onmousedown = function(){
 	}
 } 
 
+var generate_button = document.querySelector(".generate");
 
+generate_button.onmousedown = function(){
+	generate();
+}
 
 
 
