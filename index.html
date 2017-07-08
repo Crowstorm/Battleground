@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Battleground Scenery Simulator</title>
+
+     <link rel="stylesheet" type="text/css" href="bg.css">
+	 <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+
+<h1>Battleground Scenery Simulator</h1>
+
+<div class="exp_wrapper">
+	<div class="explanation">
+	Welcome to Battleground Scenery Simulator. After clicking the button program will roll dice for every square and determine how many terrain features will be used and will randomly place them. Then it will roll a single dice to give each piece of scenery an effect.
+	You can display legend below the battleground to learn more about terrain and it's effects.
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row r1">
+		<div class="square o1">
+			<div class="isq i1"></div>
+			<div class="isq i2"></div>
+			<div class="isq i3"></div>
+			<div class="isq i4"></div>
+			<div class="isq i5"></div>
+			<div class="isq i6"></div>
+			<div class="isq i7"></div>
+			<div class="isq i8"></div>
+			<div class="isq i9"></div>
+		</div>
+		<div class="square o2">
+			<div class="isq i1"></div>
+			<div class="isq i2"></div>
+			<div class="isq i3"></div>
+			<div class="isq i4"></div>
+			<div class="isq i5"></div>
+			<div class="isq i6"></div>
+			<div class="isq i7"></div>
+			<div class="isq i8"></div>
+			<div class="isq i9"></div>
+		</div>
+		<div class="square o3">
+			<div class="isq i1"></div>
+			<div class="isq i2"></div>
+			<div class="isq i3"></div>
+			<div class="isq i4"></div>
+			<div class="isq i5"></div>
+			<div class="isq i6"></div>
+			<div class="isq i7"></div>
+			<div class="isq i8"></div>
+			<div class="isq i9"></div>
+		</div>
+	</div>
+	<div class="row r2">
+		<div class="square o4">
+			<div class="isq i1"></div>
+			<div class="isq i2"></div>
+			<div class="isq i3"></div>
+			<div class="isq i4"></div>
+			<div class="isq i5"></div>
+			<div class="isq i6"></div>
+			<div class="isq i7"></div>
+			<div class="isq i8"></div>
+			<div class="isq i9"></div>
+		</div>
+		<div class="square o5">
+			<div class="isq i1"></div>
+			<div class="isq i2"></div>
+			<div class="isq i3"></div>
+			<div class="isq i4"></div>
+			<div class="isq i5"></div>
+			<div class="isq i6"></div>
+			<div class="isq i7"></div>
+			<div class="isq i8"></div>
+			<div class="isq i9"></div>
+		</div>
+		<div class="square o6">
+			<div class="isq i1"></div>
+			<div class="isq i2"></div>
+			<div class="isq i3"></div>
+			<div class="isq i4"></div>
+			<div class="isq i5"></div>
+			<div class="isq i6"></div>
+			<div class="isq i7"></div>
+			<div class="isq i8"></div>
+			<div class="isq i9"></div>
+		</div>
+	</div>
+</div>
+
+<div class="button_wrapper">
+	<button class="dis_legend">Click to display legend</button>
+</div>
+
+<div class="legend">
+	<div class="terrain">
+		<div class="legend_row">
+			<div class="image" id="barrel"></div><div class="description">Small terrain feature that doesn't obstruct the view or movement</div>
+		</div>
+
+		<div class="legend_row">
+			<div class="image" id="fence"></div><div class="description">Small terrain feature that doesn't obstruct the view but obstructs the movement</div>
+		</div>
+
+		<div class="legend_row">
+			<div class="image" id="tree"></div><div class="description">A tree or forest</div>
+		</div>
+
+		<div class="legend_row">
+			<div class="image" id="plains"></div><div class="description">Big terrain feature that doesn't obstruct the view or movement</div>
+		</div>
+
+		<div class="legend_row">
+			<div class="image" id="hills"></div><div class="description">Big terrain feature that obstructs view and movement</div>
+		</div>		
+	</div>
+	<div class="attributes">
+		<div class="legend_row2">
+			<div class="short">Dmn:</div> <div class="description"> If any of your units are within 3'' of this terrain feature in your hero phase, you can declare that one is making a sacrifice. If you do so, the unit suffers D3 mortal wounds, but you can add 1 to all hit rolls for the unit until your next hero phase.</div>
+		</div>
+		<div class="legend_row2">
+			<div class="short">Arc:</div><div class="description"> Add 1 to the result of any casting or unbinding rolls made for a wizard within 3'' of this terrain feature</div>
+		</div>
+		<div class="legend_row2">
+			<div class="short">Ins:</div> <div class="description">Add 1 to the Bravery of all units within 3'' of this terrain feature.</div>
+		</div>
+		<div class="legend_row2">
+			<div class="short">Dead:</div><div class="description">Roll a dice for any model that makes a run or charge move across, or finishing on this terrain feature. On a roll of 1 the model is slain.</div>
+		</div>
+		<div class="legend_row2">
+			<div class="short">Mst:</div><div class="description">Roll a dice in your hero phase for each of your units within 3'' of this terrain feature. On a roll of 1 the unit is befuddled and can't be selected to cast spells, move or attack until your next hero phase. On a roll of 2-6 the unit is ensorcelled, and you can reroll failed wound rolls for the unit until your next hero phase.</div> 
+		</div>
+		<div class="legend_row2">
+			<div class="short">Sin</div><div class="description">Any of your units that are within 3'' of this terrain feature in your hero phase cause fear until your next hero phase. Substract 1 from the Bravery of any enemy units that are within 3'' of one of your units that cause fear.</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">&copy; 2017 Crowstorm</div>
+
+<script type="text/javascript" src="bg.js"></script>
+
+</body>
+</html>

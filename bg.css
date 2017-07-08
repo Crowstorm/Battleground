@@ -1,0 +1,208 @@
+h1{
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	color: #a50000;
+	/*text-shadow: 2px 2px 4px white;*/
+}
+
+html {
+  min-height:100%
+}
+
+
+.button_wrapper{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+}
+
+button{
+  margin: 0 auto;
+  font-size: 1.0rem;
+  padding: 1.25rem 2.5rem;
+  display: block;
+  background-color: #60000c;
+  border: 1px solid transparent;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  height: 5%;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body{
+	min-height: 100%;
+	background: url('background.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer{
+	text-align: center;
+	position:fixed;
+    bottom:0;
+    color: white;
+}
+
+.container{
+	width: 60vw;
+	height: 40vw;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	background-image: url('texture.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.row{
+	height: 50%;
+	width: 100%;
+	display: flex;
+}
+
+.r1{
+	background: rgba(229, 0, 0, 0.3);
+}
+
+.r2{
+	background: rgba(0, 114, 229, 0.3);
+}
+
+.square{
+	height: 100%;
+	width: 33.33333%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.isq{
+	height: 33.33333%;
+	width: 33.33333%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-size: cover;
+  	font-size: 2em;
+  	color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+.legend{
+	padding: 30px 0px 30px 0px;
+	width: 60vw;
+	margin: auto;
+	flex-wrap: nowrap;
+}
+
+.terrain{
+	width: 48%;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 0px 5px 0px 0px;
+}
+
+.attributes{
+	width:48%;
+	padding: 0px 0px 0px 15px;
+}
+
+.legend_row{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.legend_row2{
+	display: flex;
+	flex: 1;
+	padding: 8px 0px 8px 0px;
+	border: 1px solid black;
+}
+
+.short{
+	display: flex;
+	flex: 0.2;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.description{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px 10px 10px 10px;
+}
+
+.exp_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explanation{
+	background: rgba(38, 12, 12, 0.48);
+	width: 60vw;
+	text-align: center;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+.image{
+	height: 80px;
+	width: 80px;
+	margin-left: 10px;
+}
+
+#barrel{
+	background: url('barrel2.png');
+	background-size: cover;
+}
+
+#fence{
+	background: url('fence2.png');
+	background-size: cover;
+}
+
+#tree{
+	background: url('tree2.png');
+	background-size: cover;
+}
+
+#plains{
+	background: url('plains2.png');
+	background-size: cover;
+}
+
+#hills{
+	background: url('hills2.png');
+	background-size: cover;
+}
+
+
+
+
+
+
